@@ -3,12 +3,12 @@
 Ce projet est basé sur un dépôt existant (https://github.com/Mudassiruddin7/Resume-Parser-with-SpaCy-NLP-Streamlit.git), adapté pour mieux traiter l'extraction des données de CV en format PDF, en français à l'aide de SpaCy et des pipelines sur mesure.
 
 ## Modifications apportées
-- emplacement de dépendances problématiques comme pyresparser
+- suppression de la bibliothèque pyresparser, problématique
 - Meilleure prise en charge des fichiers PDF en français
 - Retrait du logo initial, jugé non pertinent pour le bon fonctionnement de l’application.
-- Ajout d’un mécanisme d’extraction et d’enregistrement des compétences détectées dans le CV, intégrées à la liste skills_list.
+- Ajout des compétences détectées dans le CV, intégrées à la liste skills_list.
 - Installation du modèle linguistique français fr_core_news_sm de spaCy, ainsi que de la bibliothèque spaCy elle-même, afin de permettre une analyse linguistique adaptée à la langue française.
-- Suppression de la fonctionnalité de génération de vidéos, considérée comme non essentielle au projet.
+- Suppression de la fonctionnalité de génération de vidéos et du fichier Courses.py, considérée comme non essentielle au projet.
 - Traduction intégrale des commentaires dans le code et des éléments de l’interface utilisateur, initialement en anglais, vers le français.
 - Mise en place de la collecte et de l’enregistrement du nom réel du candidat dans la base de données, remplaçant l’affichage générique « Candidat inconnu » issu du code d’origine.
 - Ajout d’un pipeline de parsing plus robuste pour l’extraction de données
